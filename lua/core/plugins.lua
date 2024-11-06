@@ -20,7 +20,8 @@ require("lazy").setup({
 			"nvim-tree/nvim-web-devicons",
 			"MunifTanjim/nui.nvim",
 			"s1n7ax/nvim-window-picker"
-		}
+		},
+		enable = False
 	},
 	{"neovim/nvim-lspconfig"},
 	{"nvim-treesitter/nvim-treesitter"},
@@ -36,5 +37,33 @@ require("lazy").setup({
 		dependencies = {"nvim-lua/plenary.nvim"}
 	},
 	{'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
-	{'ggandor/leap.nvim'}
+	{'phaazon/hop.nvim'},
+	{
+		"nvim-neotest/neotest",
+		dependencies = {
+			"nvim-neotest/nvim-nio",
+			"nvim-lua/plenary.nvim",
+			"antoinemadec/FixCursorHold.nvim",
+			"nvim-treesitter/nvim-treesitter",
+			"nvim-neotest/neotest-go",
+		},
+	},
+	{"andythigpen/nvim-coverage"},
+	{
+		"leoluz/nvim-dap-go",
+		dependencies = {
+			"mfussenegger/nvim-dap",
+			"rcarriga/nvim-dap-ui",
+			"nvim-neotest/nvim-nio",
+		},
+	},
+	{"terrortylor/nvim-comment"},
+	{"sindrets/diffview.nvim"},
+	{
+	    "Exafunction/codeium.nvim",
+		dependencies = {
+				"nvim-lua/plenary.nvim",
+				"hrsh7th/nvim-cmp",
+		},
+	    },
 })
