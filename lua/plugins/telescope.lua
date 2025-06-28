@@ -1,7 +1,7 @@
 require('telescope').setup{
-		defaults = {
-				file_ignore_patterns = {"vendor", "mocks"}
-		}
+		-- defaults = {
+		-- 		file_ignore_patterns = {"vendor", "mocks"}
+		-- }
 }
 
 local builtin = require('telescope.builtin')

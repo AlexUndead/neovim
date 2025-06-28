@@ -59,11 +59,11 @@ require("lazy").setup({
 	},
 	{"terrortylor/nvim-comment"},
 	{"sindrets/diffview.nvim"},
-	{
-	    "Exafunction/codeium.nvim",
-		dependencies = {
-				"nvim-lua/plenary.nvim",
-				"hrsh7th/nvim-cmp",
-		},
-	    },
+	-- {
+	--     "Exafunction/codeium.nvim",
+	-- 	dependencies = {
+	-- 			"nvim-lua/plenary.nvim",
+	-- 			"hrsh7th/nvim-cmp",
+	-- 	},
+	--     },
 })
